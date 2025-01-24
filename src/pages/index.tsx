@@ -1,6 +1,11 @@
 import Head from 'next/head';
+import { useEffect } from 'react';
 
 export default function Home() {
+     useEffect(() => {
+    // Load Bootstrap's JS on the client side
+    import('bootstrap/dist/js/bootstrap.bundle.min.js');
+  }, []);
   return (
     <>
       <Head>
