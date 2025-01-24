@@ -1,11 +1,17 @@
+import Aos from 'aos';
 import Head from 'next/head';
 import { useEffect } from 'react';
-
 export default function Home() {
      useEffect(() => {
     // Load Bootstrap's JS on the client side
     import('bootstrap/dist/js/bootstrap.bundle.min.js');
   }, []);
+  useEffect(() => {
+    Aos.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
   return (
     <>
       <Head>
@@ -15,7 +21,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="hero-heading">
+                    <div data-aos="fade-up" className="hero-heading">
                         <h1>Clean air initiative</h1>
                         <p>Despite the fact that the recommendations are neither standards.</p>
                         <a className="page-btn" href="#"><img src="./img/btn-icon.png" alt=""/> Contribute now</a>
@@ -29,7 +35,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="key-heading">
+                    <div data-aos="fade-up" className="key-heading">
                         <h2>Key highlights</h2>
                         <h3>of the initiative</h3>
                     </div>
@@ -78,7 +84,7 @@ export default function Home() {
         <div className="container-fluid">
             <div className="row">
                 <div className="col-lg-12">
-                    <div className="contribute-heading">
+                    <div data-aos="fade-up" className="contribute-heading">
                         <h2>Contribute to a <span> world of clean air</span></h2>
                         <p><strong>Every breath matters.</strong> Join the mission to make air breathable for everyone.
                         </p>
@@ -129,7 +135,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <div className="why-heading">
+                    <div data-aos="fade-up" className="why-heading">
                         <h2><span>Why join the</span> clean air initiative</h2>
                         <p>Be a part of a global movement for cleaner air and healthier communities.</p>
                     </div>
@@ -165,7 +171,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-8">
-                    <div className="check-live-heading">
+                    <div data-aos="fade-up" className="check-live-heading">
                         <h2>Check <span>Live</span>
                             <br />
                             Air quality conditions in your area
@@ -197,7 +203,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <div className="contri-heading">
+                    <div data-aos="fade-up" className="contri-heading">
                         <h2>Contribute to a
                             <span> world of clean air</span>
                         </h2>
@@ -220,7 +226,7 @@ export default function Home() {
             </div>
             <div className="row">
                 <div className="col-lg-12">
-                    <div className="feature-heading">
+                    <div data-aos="fade-up" className="feature-heading">
                         <h3>Monitor Features</h3>
                     </div>
                 </div>
@@ -256,7 +262,7 @@ export default function Home() {
             </div>
             <div className="row">
                 <div className="col-lg-12">
-                    <div className="connect-heading">
+                    <div data-aos="fade-up" className="connect-heading">
                         <h2>Connectivity</h2>
                     </div>
                 </div>
@@ -298,7 +304,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <div className="better-data-heading">
+                    <div data-aos="fade-up" className="better-data-heading">
                         <h2>Better data access</h2>
                         <p>We focus on underprivileged areas, helping improve their air quality by checking smoke, odour
                             and other levels. </p>
@@ -314,7 +320,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="join-heading">
+                    <div data-aos="fade-up" className="join-heading">
                         <h2>How to Join the Initiative?</h2>
                         <p>Join the innovation now to</p>
                     </div>
@@ -398,7 +404,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <div className="faq-heading">
+                    <div data-aos="fade-up" className="faq-heading">
                         <h2>Frequently asked questions</h2>
                     </div>
                     <div className="accordion" id="accordionExample">
