@@ -275,7 +275,7 @@ export default function Home() {
                 <div className="col-lg-6">
                     <div className="wifi-img">
                         <ul>
-                            <li><img src="./img/wifi-2-4-ghz.webp" alt="" /></li>
+                            <li><img data-aos="fade-up" src="./img/wifi-2-4-ghz.webp" alt="" /></li>
                             <li>
                                 <h3>WiFi 2.4GHz</h3>
                                 <p>Yes, install an air quality monitor at no cost <strong>(shipping charges may
@@ -287,7 +287,7 @@ export default function Home() {
                 <div className="col-lg-6">
                     <div className="wifi-img mob-img">
                         <ul>
-                            <li><img src="./img/mobile-app-access.webp" alt="" /></li>
+                            <li><img data-aos="fade-up" src="./img/mobile-app-access.webp" alt="" /></li>
                             <li>
                                 <h3>Mobile app access</h3>
                                 <p>Yes, install an air quality monitor at no cost <strong>(shipping charges may
@@ -310,7 +310,7 @@ export default function Home() {
                             and other levels. </p>
                     </div>
                     <div className="bd-img">
-                        <img src="./img/better-data-access.webp" alt="" />
+                        <img data-aos="fade-up" src="./img/better-data-access.webp" alt="" />
                     </div>
                 </div>
             </div>

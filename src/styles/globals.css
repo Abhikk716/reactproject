@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,23 +8,24 @@ a {
   color: inherit;
   text-decoration: none;
 }
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    a,
-    p {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Nunito Sans';
-    }
 
-    /* ____________________hero-sec______________________ */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans';
+}
 
- .hero-sec {
+/* ____________________hero-sec______________________ */
+
+.hero-sec {
   height: 750px;
   background: url(/img/clean-air-initiative.webp);
   background-size: cover;
@@ -195,6 +195,20 @@ a {
   margin-top: -150px;
   width: 80%;
   padding-left: 40px;
+  position: relative;
+}
+
+.contri-box:hover img {
+  transform: scale(1.05);
+}
+
+.contri-box {
+  overflow: hidden;
+  height: 550px;
+}
+
+.contri-box img {
+  transition: .2s linear;
 }
 
 .contri-bx-txt p {
@@ -235,6 +249,17 @@ a {
 
 .air-quality-monitor-img img {
   width: 100%;
+  transition: .2s linear;
+}
+
+.air-quality-monitor-img:hover img {
+  transform: scale(1.05);
+}
+
+.air-quality-monitor-img {
+  overflow: hidden;
+  height: 600px;
+  border-radius: 30px;
 }
 
 .why-bg-box h3 {
@@ -681,7 +706,7 @@ a {
   width: 24%;
   border-radius: 30px;
   border: 1px solid #CAD5CE;
-  height: 340px;
+  height: 360px;
 }
 
 .how-join-box ul li h3 {
@@ -698,6 +723,11 @@ a {
 
 .join-img img {
   width: 70%;
+  transition: .2s linear;
+}
+
+.join-img:hover img {
+  transform: scale(1.05);
 }
 
 .join-txt p {
@@ -818,824 +848,822 @@ a {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .hero-sec {
-      height: 450px;
-      background-position: -350px center;
+    height: 450px;
+    background-position: -350px center;
   }
 
   .hero-heading h1 {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   .hero-heading {
-      padding-top: 50px;
-      text-align: center;
+    padding-top: 50px;
+    text-align: center;
   }
 
   .hero-heading p {
-      font-size: 16px;
-      width: 100%;
-      line-height: 24px;
-      padding: 0px 40px 20px;
+    font-size: 16px;
+    width: 100%;
+    line-height: 24px;
+    padding: 0px 40px 20px;
   }
 
   .page-btn {
-      gap: 15px;
-      width: 55%;
-      margin: 0 auto;
+    gap: 15px;
+    width: 55%;
+    margin: 0 auto;
   }
 
   .key-sec-sec {
-      padding: 20px 0;
+    padding: 20px 0;
   }
 
   .key-highlight ul {
-      justify-content: space-between;
-      flex-direction: column;
+    justify-content: space-between;
+    flex-direction: column;
   }
 
   .key-sec-heading {
-      padding-top: 50px;
+    padding-top: 50px;
   }
 
   .key-heading {
-      padding-left: 0px;
-      text-align: center;
+    padding-left: 0px;
+    text-align: center;
   }
 
   .contribute-heading {
-      padding-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   .key-heading h2 {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .key-heading h3 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .key-highlight ul li {
-      gap: 10px;
-      position: relative;
-      flex-direction: column;
-      justify-items: stretch;
+    gap: 10px;
+    position: relative;
+    flex-direction: column;
+    justify-items: stretch;
   }
 
   .key-highlight ul li img {
-      width: 40px;
+    width: 40px;
   }
 
   .key-highlight ul li h4 {
-      font-size: 18px;
-      text-align: center;
-      padding-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
   }
 
   .contribute-sec {
-      padding-top: 50px;
+    padding-top: 50px;
   }
 
   .contribute-heading h2 {
-      font-size: 32px;
-      width: 80%;
-      margin: 0 auto;
+    font-size: 32px;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .contribute-heading p {
-      font-size: 16px;
-      margin: 0 auto;
-      width: 90%;
-      padding-top: 5px;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 5px;
   }
 
   .contri-box {
-      margin-bottom: 70px;
+    margin-bottom: 70px;
   }
 
   .contri-bx-txt {
-      margin-top: -120px;
-      width: 80%;
-      padding-left: 30px;
+    margin-top: -120px;
+    width: 80%;
+    padding-left: 30px;
   }
 
   .contri-bx-txt h3 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .contri-bx-txt p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .why-join-sec {
-      padding-top: 50px;
+    padding-top: 50px;
   }
 
   .why-heading p {
-      font-size: 16px;
-      margin: 0 auto;
-      width: 80%;
-      padding-top: 5px;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 5px;
   }
 
   .why-heading {
-      padding-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   .why-bg-box {
-      border-radius: 20px;
-      height: auto;
-      padding: 30px;
-      margin-bottom: 20px;
+    border-radius: 20px;
+    height: auto;
+    padding: 30px;
+    margin-bottom: 20px;
   }
 
   .why-bg-box h3 {
-      font-size: 20px;
-      width: 40%;
-      line-height: 26px;
-      padding-bottom: 20px;
+    font-size: 20px;
+    width: 40%;
+    line-height: 26px;
+    padding-bottom: 20px;
   }
 
   .why-bg-box p {
-      font-size: 14px;
-      width: 80%;
+    font-size: 14px;
+    width: 80%;
   }
 
   .free-txt {
-      margin-top: -150px;
-      padding-left: 30px;
+    margin-top: -150px;
+    padding-left: 30px;
   }
 
   .check-live-heading h2 {
-      font-size: 28px;
-      line-height: 34px;
+    font-size: 28px;
+    line-height: 34px;
   }
 
   .check-live-heading h2 span:before {
-      width: 10px;
-      height: 10px;
-      left: 15px;
-      top: 15px;
+    width: 10px;
+    height: 10px;
+    left: 15px;
+    top: 15px;
   }
 
   .tab-buttons {
-      width: 80%;
-      float: none;
-      margin: 20px auto 0;
+    width: 80%;
+    float: none;
+    margin: 20px auto 0;
   }
 
   .tab-contents {
-      margin-top: 20px;
+    margin-top: 20px;
   }
 
   .tab-content {
-      height: auto;
+    height: auto;
   }
 
   .contri-sec {
-      margin-top: 100px;
-      padding-top: 40px;
+    margin-top: 100px;
+    padding-top: 40px;
   }
 
   .contri-heading h2 {
-      font-size: 32px;
-      width: 80%;
-      line-height: 38px;
+    font-size: 32px;
+    width: 80%;
+    line-height: 38px;
   }
 
   .contri-heading {
-      padding-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   .its-free-heaidng {
-      border-radius: 30px 30px 0 0px;
-      height: auto;
-      margin-right: 0px;
-      padding-left: 20px;
-      padding-top: 30px;
-      padding-bottom: 30px;
+    border-radius: 30px 30px 0 0px;
+    height: auto;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .its-free-heaidng h3 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .its-free-heaidng p {
-      font-size: 16px;
-      padding: 5px 0 15px;
-      width: 70%;
+    font-size: 16px;
+    padding: 5px 0 15px;
+    width: 70%;
   }
 
   .its-free-heaidng a {
-      margin: 0;
+    margin: 0;
   }
 
   .its-free-img img {
-      border-radius: 30px;
+    border-radius: 30px;
   }
 
   .feature-heading {
-      padding-top: 50px;
+    padding-top: 50px;
   }
 
   .feature-heading h3 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .track-key {
-      border-radius: 30px;
-      padding: 40px 30px;
-      margin-top: 20px;
+    border-radius: 30px;
+    padding: 40px 30px;
+    margin-top: 20px;
   }
 
   .track-key ul li {
-      width: 100%;
-      font-size: 16px;
-      margin-bottom: 15px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
   }
 
   .track-key ul li img {
-      width: 35px;
+    width: 35px;
   }
 
   .track-key h4 {
-      font-size: 20px;
-      padding-bottom: 20px;
+    font-size: 20px;
+    padding-bottom: 20px;
   }
 
   .built-outdoor {
-      height: auto;
-      border-radius: 30px;
-      margin-top: 20px;
-      padding-top: 30px;
-      padding-left: 20px;
-      padding-bottom: 20px;
+    height: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
   }
 
   .built-outdoor h4 {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .built-outdoor p {
-      width: 70%;
+    width: 70%;
   }
 
   .built-outdoor ul li:first-child {
-      left: 80px;
+    left: 80px;
   }
 
   .built-outdoor ul li {
-      width: 60%;
+    width: 60%;
   }
 
   .built-outdoor ul li:last-child {
-      left: 100px;
+    left: 100px;
   }
 
   .connect-heading {
-      padding-top: 50px;
+    padding-top: 50px;
   }
 
   .connect-heading h2 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .wifi-img {
-      padding: 30px 0;
+    padding: 30px 0;
   }
 
   .wifi-img ul {
-      gap: 10px;
-      padding: 0 20px;
-      flex-direction: column-reverse;
+    gap: 10px;
+    padding: 0 20px;
+    flex-direction: column-reverse;
   }
 
   .wifi-img ul li img {
-      width: 50%;
+    width: 50%;
   }
 
   .wifi-img ul li h3 {
-      font-size: 20px;
-      padding-top: 10px;
+    font-size: 20px;
+    padding-top: 10px;
   }
 
   .wifi-img ul li p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .mob-img ul li img {
-      width: 80%;
+    width: 80%;
   }
 
   .mob-img ul li:last-child {
-      left: 0;
+    left: 0;
   }
 
   .mob-img {
-      padding: 10px 0 0;
+    padding: 10px 0 0;
   }
 
   .better-data-sec {
-      margin-top: 50px;
+    margin-top: 50px;
   }
 
   .better-data-heading h2 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .better-data-heading p {
-      font-size: 14px;
-      width: 80%;
-      margin: 5px auto;
+    font-size: 14px;
+    width: 80%;
+    margin: 5px auto;
   }
 
   .bd-img {
-      margin-top: 0;
+    margin-top: 0;
   }
 
   .join-sec {
-      margin-top: 40px;
-      padding-top: 40px;
+    margin-top: 40px;
+    padding-top: 40px;
   }
 
   .join-heading h2 {
-      font-size: 30px;
-      width: 80%;
+    font-size: 30px;
+    width: 80%;
   }
 
   .join-btn a {
-      float: left;
+    float: left;
   }
 
   .how-join-box ul {
-      margin: 50px 0 0;
+    margin: 50px 0 0;
   }
 
   .how-join-box ul li {
-      width: 49%;
-      border-radius: 20px;
-      height: auto;
-      margin-bottom: 5px;
+    width: 49%;
+    border-radius: 20px;
+    height: auto;
+    margin-bottom: 5px;
   }
 
   .join-txt {
-      padding-top: 10px;
-      padding-left: 10px;
-      padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
   }
 
   .join-txt h4 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .join-txt p {
-      font-size: 12px;
-      width: 100%;
+    font-size: 12px;
+    width: 100%;
   }
 
   .become-sec {
-      padding-top: 50px;
+    padding-top: 50px;
   }
 
   .become-heading {
-      border-radius: 30px 30px 0 30px;
-      height: auto;
-      width: 100%;
-      top: 0px;
-      padding-left: 30px;
-      padding-top: 30px;
-      padding-bottom: 70px;
+    border-radius: 30px 30px 0 30px;
+    height: auto;
+    width: 100%;
+    top: 0px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 70px;
   }
 
   .become-heading h2 {
-      font-size: 26px;
+    font-size: 26px;
   }
 
   .become-heading p {
-      font-size: 14px;
-      width: 80%;
+    font-size: 14px;
+    width: 80%;
   }
 
   .become-heading a {
-      width: 60%;
-      float: left;
+    width: 60%;
+    float: left;
   }
 
   .faq-sec {
-      padding-top: 50px;
-      padding-bottom: 60px;
+    padding-top: 50px;
+    padding-bottom: 60px;
   }
 
   .faq-heading h2 {
-      font-size: 30px;
-      width: 70%;
-      padding-bottom: 30px;
+    font-size: 30px;
+    width: 70%;
+    padding-bottom: 30px;
   }
 
   .accordion-body {
-      padding: 0px 20px 20px;
+    padding: 0px 20px 20px;
   }
 
   .accordion-button {
-      padding: 20px 20px 10px;
+    padding: 20px 20px 10px;
   }
 
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
   .hero-sec {
-      height: 400px;
+    height: 400px;
   }
 
   .hero-heading {
-      padding-top: 150px;
+    padding-top: 150px;
   }
 
   .key-sec-sec {
-      padding: 30px 0;
+    padding: 30px 0;
   }
 
   .key-highlight ul li h4 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .key-highlight ul li img {
-      width: 40px;
+    width: 40px;
   }
 
   .contribute-heading p {
-      width: 50%;
+    width: 50%;
   }
 
   .contri-box {
-      margin-bottom: 130px;
+    margin-bottom: 130px;
   }
 
   .contri-bx-txt {
-      margin-top: -140px;
-      width: 90%;
-      padding-left: 20px;
+    margin-top: -140px;
+    width: 90%;
+    padding-left: 20px;
   }
 
   .contribute-sec {
-      padding-top: 60px;
+    padding-top: 60px;
   }
 
   .key-sec-heading {
-      padding-top: 60px;
+    padding-top: 60px;
   }
 
   .contri-box {
-      margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   .better-data-sec {
-      margin-top: 60px;
+    margin-top: 60px;
   }
 
   .better-data-heading p {
-      font-size: 16px;
-      width: 70%;
+    font-size: 16px;
+    width: 70%;
   }
 
   .join-txt h4 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .how-join-box ul li {
-      height: 270px;
+    height: 270px;
   }
 
   .how-join-box ul {
-      margin: 40px 0 0;
+    margin: 40px 0 0;
   }
 
   .join-txt p {
-      font-size: 15px;
-      width: 92%;
+    font-size: 15px;
+    width: 92%;
   }
 
   .join-txt {
-      padding-top: 0px;
-      padding-left: 20px;
+    padding-top: 0px;
+    padding-left: 20px;
   }
 
   .join-sec {
-      margin-top: 80px;
-      padding-top: 50px;
+    margin-top: 80px;
+    padding-top: 50px;
   }
 
   .bd-img {
-      margin-top: -30px;
+    margin-top: -30px;
   }
 
   .contribute-heading {
-      padding-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   .why-join-sec {
-      padding-top: 50px;
+    padding-top: 50px;
   }
 
   .why-heading p {
-      width: 50%;
+    width: 50%;
   }
 
   .why-bg-box {
-      border-radius: 25px;
-      height: auto;
-      margin-bottom: 20px;
+    border-radius: 25px;
+    height: auto;
+    margin-bottom: 20px;
   }
 
   .free-txt p {
-      width: 70%;
+    width: 70%;
   }
 
   .check-live-heading h2 {
-      font-size: 32px;
-      line-height: 50px;
+    font-size: 32px;
+    line-height: 50px;
   }
 
   .tab-buttons {
-      width: 50%;
-      float: none;
-      margin-top: 20px;
+    width: 50%;
+    float: none;
+    margin-top: 20px;
   }
 
   .tab-content {
-      height: auto;
+    height: auto;
   }
 
   .contri-sec {
-      margin-top: 100px;
+    margin-top: 100px;
   }
 
   .contri-heading h2 {
-      font-size: 36px;
-      width: 50%;
-      line-height: 42px;
+    font-size: 36px;
+    width: 50%;
+    line-height: 42px;
   }
 
   .its-free-heaidng {
-      border-radius: 40px;
-      height: 300px;
-      margin-right: 0px;
-      padding-left: 50px;
-      padding-top: 50px;
+    border-radius: 40px;
+    height: 300px;
+    margin-right: 0px;
+    padding-left: 50px;
+    padding-top: 50px;
   }
 
   .contri-sec:before {
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
   }
 
   .track-key {
-      padding: 40px 30px;
-      margin-top: 30px;
+    padding: 40px 30px;
+    margin-top: 30px;
   }
 
   .track-key ul li img {
-      width: 40px;
+    width: 40px;
   }
 
   .track-key ul li {
-      font-size: 16px;
-      margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 
   .track-key h4 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .wifi-img {
-      padding: 40px 0;
+    padding: 40px 0;
   }
 
   .wifi-img ul li img {
-      width: 70%;
+    width: 70%;
   }
 
   .mob-img ul li img {
-      width: 70%;
+    width: 70%;
   }
 
   .mob-img ul li:last-child {
-      left: -40px;
-      top: -40px;
+    left: -40px;
+    top: -40px;
   }
 
   .container-fluid .col-lg-3 {
-      float: right;
-      width: 25%;
+    float: right;
+    width: 25%;
   }
 
   .contri-bx-txt h3 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .contri-bx-txt p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .become-sec {
-      padding-top: 120px;
+    padding-top: 120px;
   }
 
   .become-heading {
-      width: 100%;
-      top: 0;
-      padding-left: 50px;
-      padding-top: 40px;
+    width: 100%;
+    top: 0;
+    padding-left: 50px;
+    padding-top: 40px;
   }
 
   .faq-sec {
-      padding-top: 70px;
-      padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 80px;
   }
 
   .faq-heading h2 {
-      font-size: 30px;
-      width: 50%;
-      padding-bottom: 30px;
+    font-size: 30px;
+    width: 50%;
+    padding-bottom: 30px;
   }
 
   .accordion-body {
-      padding: 10px 30px 30px;
+    padding: 10px 30px 30px;
   }
 
   .accordion-button {
-      padding: 20px 30px 10px;
+    padding: 20px 30px 10px;
   }
 
   .mob-img {
-      padding: 60px 0 0 !important;
+    padding: 60px 0 0 !important;
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .hero-heading p {
-      width: 90%;
+    width: 90%;
   }
 
   .hero-sec {
-      height: 550px;
+    height: 550px;
   }
 
   .page-btn {
-      width: 45%;
+    width: 45%;
   }
 
   .hero-heading {
-      padding-top: 200px;
+    padding-top: 200px;
   }
 
   .contribute-heading p {
-      width: 45%;
+    width: 45%;
   }
 
   .contri-bx-txt {
-      margin-top: -150px;
-      padding-left: 20px;
-      width: 97%;
+    margin-top: -150px;
+    padding-left: 20px;
+    width: 97%;
   }
 
   .why-join-sec {
-      padding-top: 130px;
+    padding-top: 130px;
   }
 
   .why-heading p {
-      width: 50%;
+    width: 50%;
   }
 
   .why-bg-box {
-      height: 240px;
-      padding: 30px;
-      margin-bottom: 20px;
+    height: 240px;
+    padding: 30px;
+    margin-bottom: 20px;
   }
 
   .why-bg-box h3 {
-      padding-bottom: 10px;
-      width: 45%;
+    padding-bottom: 10px;
+    width: 45%;
   }
 
   .check-live-heading h2 {
-      font-size: 30px;
-      line-height: 44px;
+    font-size: 30px;
+    line-height: 44px;
   }
 
   .check-live-heading h2 span:before {
-      width: 10px;
-      height: 10px;
-      left: 10px;
-      top: 16px;
+    width: 10px;
+    height: 10px;
+    left: 10px;
+    top: 16px;
   }
 
   .tab-buttons {
-      width: 100%;
+    width: 100%;
   }
 
   .tab-content {
-      height: auto;
+    height: auto;
   }
 
   .contri-sec {
-      margin-top: 100px;
+    margin-top: 100px;
   }
 
   .contri-heading h2 {
-      width: 40%;
+    width: 40%;
   }
 
   .its-free-heaidng {
-      height: 220px;
-      margin-right: -40px;
-      padding-left: 30px;
-      padding-top: 30px;
+    height: 220px;
+    margin-right: -40px;
+    padding-left: 30px;
+    padding-top: 30px;
   }
 
   .its-free-img img {
-      border-radius: 40px;
+    border-radius: 40px;
   }
 
   .its-free-heaidng p {
-      font-size: 16px;
-      padding: 5px 0 20px;
-      width: 80%;
+    font-size: 16px;
+    padding: 5px 0 20px;
+    width: 80%;
   }
 
   .contri-sec:before {
-      width: 100%;
+    width: 100%;
   }
 
   .track-key ul li img {
-      width: 40px;
+    width: 40px;
   }
 
   .track-key ul li {
-      width: 65%;
-      font-size: 14px;
-      margin-bottom: 10px;
+    width: 65%;
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 
   .track-key h4 {
-      font-size: 22px;
-      padding-bottom: 20px;
+    font-size: 22px;
+    padding-bottom: 20px;
   }
 
   .built-outdoor ul li:last-child {
-      left: 90px;
+    left: 90px;
   }
 
   .built-outdoor ul li {
-      width: 60%;
-      left: 100px !important;
+    width: 60%;
+    left: 100px !important;
   }
 
   .mob-img ul li img {
-      width: 100%;
+    width: 100%;
   }
 
   .better-data-heading p {
-      width: 50%;
+    width: 50%;
   }
 
   .bd-img {
-      margin-top: -30px;
+    margin-top: -30px;
   }
 
   .join-txt {
-      padding-top: 0px;
-      padding-left: 20px;
+    padding-top: 0px;
+    padding-left: 20px;
   }
 
   .join-txt p {
-      font-size: 15px;
-      width: 100%;
+    font-size: 15px;
+    width: 100%;
   }
 
   .how-join-box ul li {
-      height: 320px;
+    height: 320px;
   }
 
   .become-heading {
-      height: 250px;
-      width: 480px;
-      top: -40px;
-      padding-left: 40px;
-      padding-top: 30px;
+    height: 250px;
+    width: 480px;
+    top: -40px;
+    padding-left: 40px;
+    padding-top: 30px;
   }
 
   .become-heading a {
-      width: 50%;
+    width: 50%;
   }
 
   .faq-heading h2 {
-      font-size: 30px;
-      padding-bottom: 30px;
+    font-size: 30px;
+    padding-bottom: 30px;
   }
 
   .mob-img ul li:last-child {
-      left: 0;
+    left: 0;
   }
 }
-
-
