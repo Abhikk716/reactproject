@@ -303,6 +303,7 @@ p {
 .free-txt {
   margin-top: -160px;
   padding-left: 70px;
+  position: relative;
 }
 
 .tab-buttons {
