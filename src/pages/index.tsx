@@ -436,9 +436,9 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div data-aos="fade-up" className="lets-talk">
-                        <h2>Let’s Talk</h2>
-                        <p>Have some big idea or brand to develop and need help? Then reach out we'd love to hear about
+                    <div className="lets-talk">
+                        <h2 data-aos="fade-up" >Let’s Talk</h2>
+                        <p data-aos="fade-up" >Have some big idea or brand to develop and need help? Then reach out we'd love to hear about
                             your project and provide help</p>
                         <ul>
                             <li>
