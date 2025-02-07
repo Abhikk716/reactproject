@@ -22,7 +22,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="hero-heading">
+                    <div data-aos="fade-up" className="hero-heading">
                         <h1>Monitor the air you <br /> are breathing</h1>
                         <p>Own an air quality monitor to now the air quality around you. </p>
                         <a className="page-btn" href="#"><img src="./img/grow-btn.png" alt="" /> Learn More</a>
@@ -36,7 +36,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="air-quality-heading">
+                    <div data-aos="fade-up" className="air-quality-heading">
                         <h2> <span> What is </span>
                             <br /> air quality monitoring?
                         </h2>
@@ -49,7 +49,7 @@ export default function Home() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        <div className="air-quality-sub-heading">
+                        <div data-aos="fade-up" className="air-quality-sub-heading">
                             <h2>Air Quality</h2>
                             <p>air quality is more worse than outdoor. Keep an eye on your indoor air quality in
                                 real-time. Don't take risk on your health. Understanding the air quality is the first
@@ -99,13 +99,13 @@ export default function Home() {
                                 </ul>
                             </button>
                         </div>
-                        <div id="content2-tab1" className="tab-content tab-content-para">
+                        <div data-aos="fade-up" id="content2-tab1" className="tab-content tab-content-para">
                             <h4>Protect your health from Indoor Pollution</h4>
                             <p>Indoor air quality is more worse than outdoor. Keep an eye on your indoor air quality in
                                 real-time. Don't take risk on your health. Unstanding the air quality is the first step
                                 to protect yourself from pollution.</p>
                         </div>
-                        <div id="content2-tab2" className="tab-content tab-content-para hidden">
+                        <div data-aos="fade-up" id="content2-tab2" className="tab-content tab-content-para hidden">
                             <h4>Protect your health from Outdoor Pollution</h4>
                             <p>Indoor air quality is more worse than outdoor. Keep an eye on your indoor air quality in
                                 real-time. Don't take
@@ -143,13 +143,13 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="data-accuracy-heading">
+                    <div data-aos="fade-up" className="data-accuracy-heading">
                         <h2><span>Data Accuracy Level</span>
                             Comparison Chart With BAM</h2>
                     </div>
                 </div>
                 <div className="col-lg-6">
-                    <div className="data-accuracy-para">
+                    <div data-aos="fade-up" className="data-accuracy-para">
                         <p>Data comparison of Prana Air’s PM2.5 monitor with a high-end air quality monitoring device.
                             Our low-cost monitors and sensors are as accurate as a high-end device. </p>
                     </div>
@@ -166,7 +166,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <div className="world-map-heading">
+                    <div data-aos="fade-up" className="world-map-heading">
                         <h2>We consume 1 million breaths of air every month without knowing how the air quality affects
                             our bodies, mind and comfort.</h2>
                     </div>
@@ -177,7 +177,7 @@ export default function Home() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6">
-                        <div className="according-who">
+                        <div data-aos="fade-up" className="according-who">
                             <h3><strong>92%</strong> of the world population is exposed to harmful levels of air
                                 pollution.
                             </h3>
@@ -185,7 +185,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="col-lg-6">
-                        <div className="according-who agency">
+                        <div data-aos="fade-up" className="according-who agency">
                             <h3>The indoors air quality we breathe is <strong>2 to 5 times worse</strong> than outdoors.
                             </h3>
                             <h4>According to <strong>Environmental Protection Agency</strong></h4>
@@ -199,13 +199,13 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <div className="major-pollution-heading">
+                    <div data-aos="fade-up" className="major-pollution-heading">
                         <h2><span>Major pollutants in</span>
                             indoor and outdoor?</h2>
                     </div>
                 </div>
                 <div className="col-lg-6">
-                    <div className="pocket-pm-box">
+                    <div data-aos="fade-up" className="pocket-pm-box">
                         <div className="btn-img"><a href="#"><img src="./img/pranaair-btn.webp" alt="" /></a></div>
                         <div className="pocket-monitor-img"><img src="./img/pocket-pm-monitor.webp" alt="" /></div>
                         <div className="pockect-txt">
@@ -215,7 +215,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="col-lg-6">
-                    <div className="pocket-pm-box">
+                    <div data-aos="fade-up" className="pocket-pm-box">
                         <div className="btn-img"><a href="#"><img src="./img/pranaair-btn.webp" alt="" /></a></div>
                         <div className="pocket-monitor-img"><img src="./img/indoor-monitor-cair.webp" alt="" /></div>
                         <div className="pockect-txt">
@@ -225,7 +225,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="col-lg-12">
-                    <div className="outdoor-box">
+                    <div data-aos="fade-up" className="outdoor-box">
                         <div className="btn-img"><a href="#"><img src="./img/pranaair-btn.webp" alt="" /></a></div>
                         <div className="pocket-monitor-img"><img src="./img/outdoor-monitor.webp" alt="" /></div>
                         <div className="outdoor-txt">
@@ -245,7 +245,7 @@ export default function Home() {
                     <div className="quote-img">
                         <img src="./img/quote-icon.png" alt="" />
                     </div>
-                    <div className="quote-para">
+                    <div data-aos="fade-up" className="quote-para">
                         <p>We consume 1 million breaths of air every month without knowing how the air quality affects
                             our bodies, mind and comfort.</p>
                     </div>
@@ -264,7 +264,7 @@ export default function Home() {
                 <div className="aqi-btn"><a href="http://" target="_blank" rel="noopener noreferrer"><img
                             src="./img/aqi-calcu-btn.png" alt="" /></a></div>
                 <div className="col-lg-4">
-                    <div className="dashboard-box">
+                    <div data-aos="fade-up" className="dashboard-box">
                         <h3>AQI Dashboard</h3>
                         <h4>Protect your health from </h4>
                         <p>Indoor air quality is more worse than outdoor. Keep an eye on your indoor </p>
@@ -279,7 +279,7 @@ export default function Home() {
             </div>
             <div className="row">
                 <div className="col-lg-5">
-                    <div className="aqi-app">
+                    <div data-aos="fade-up" className="aqi-app">
                         <div className="aqi-btn"><a href="http://" target="_blank" rel="noopener noreferrer"><img
                                     src="./img/aqi-calcu-btn.png" alt="" /></a></div>
                         <h3>AQI App </h3>
@@ -289,7 +289,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="col-lg-7">
-                    <div className="aqi-app aqi-tv-app">
+                    <div data-aos="fade-up" className="aqi-app aqi-tv-app">
                         <div className="aqi-btn"><a href="http://" target="_blank" rel="noopener noreferrer"><img
                                     src="./img/aqi-calcu-btn.png" alt="" /></a></div>
                         <h3>AQI TV app </h3>
@@ -305,13 +305,13 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="our-clinet-heading">
+                    <div data-aos="fade-up" className="our-clinet-heading">
                         <h2><span>Our</span> Clintele</h2>
                         <h3>Pleasure to work with</h3>
                     </div>
                 </div>
                 <div className="col-lg-6">
-                    <div className="our-clinet-heading">
+                    <div data-aos="fade-up" className="our-clinet-heading">
                         <p>We proudly serve businesses and individuals who prioritize clean air solutions to create a
                             healthier environment for everyone.</p>
                     </div>
@@ -385,14 +385,14 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-4">
-                    <div className="app-heading">
+                    <div data-aos="fade-up" className="app-heading">
                         <h2><span>Air quality monitor</span> applications</h2>
                     </div>
                 </div>
                 <div className="col-lg-8">
                     <div className="construct-img">
                         <img src="./img/construction-site.webp" alt="" />
-                        <div className="app-title">
+                        <div data-aos="fade-up" className="app-title">
                             <h3>Constructions Sites</h3>
                         </div>
                     </div>
@@ -400,7 +400,7 @@ export default function Home() {
                 <div className="col-lg-6">
                     <div className="app-box construct-img">
                         <img src="./img/school.webp" alt="" />
-                        <div className="app-title">
+                        <div data-aos="fade-up" className="app-title">
                             <h3>Schools</h3>
                         </div>
                     </div>
@@ -408,7 +408,7 @@ export default function Home() {
                 <div className="col-lg-6">
                     <div className="app-box construct-img">
                         <img src="./img/real-estate.webp" alt="" />
-                        <div className="app-title">
+                        <div data-aos="fade-up" className="app-title">
                             <h3>Real-estate</h3>
                         </div>
                     </div>
@@ -416,7 +416,7 @@ export default function Home() {
                 <div className="col-lg-6">
                     <div className="app-box construct-img">
                         <img src="./img/smart-homes.webp" alt="" />
-                        <div className="app-title">
+                        <div data-aos="fade-up" className="app-title">
                             <h3>Smart Homes</h3>
                         </div>
                     </div>
@@ -424,7 +424,7 @@ export default function Home() {
                 <div className="col-lg-6">
                     <div className="app-box construct-img">
                         <img src="./img/hospital-health-care.webp" alt="" />
-                        <div className="app-title">
+                        <div data-aos="fade-up" className="app-title">
                             <h3>Hospital and health care</h3>
                         </div>
                     </div>
@@ -436,7 +436,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="lets-talk">
+                    <div data-aos="fade-up" className="lets-talk">
                         <h2>Let’s Talk</h2>
                         <p>Have some big idea or brand to develop and need help? Then reach out we'd love to hear about
                             your project and provide help</p>
@@ -467,7 +467,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <div className="faq-heading">
+                    <div data-aos="fade-up" className="faq-heading">
                         <h2>Frequently asked questions</h2>
                     </div>
                     <div className="accordion" id="accordionExample">
