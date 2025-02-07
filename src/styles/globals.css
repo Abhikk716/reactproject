@@ -24,7 +24,7 @@ p {
 }
 
 .hero-sec {
-  background: url(./img/prana-air-cair-monitor.webp);
+  background: url(/img/prana-air-cair-monitor.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -105,7 +105,7 @@ p {
 }
 
 .air-quality-bg {
-  background: url(./img/air-quality.webp);
+  background: url(/img/air-quality.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -319,7 +319,7 @@ p {
 }
 
 .indoor-box {
-  background: url(./img/indoor-pollutions.webp);
+  background: url(/img/indoor-pollutions.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -327,7 +327,7 @@ p {
 }
 
 .outdoor-box {
-  background: url(./img/outdoor-pollution.webp);
+  background: url(/img/outdoor-pollution.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -422,7 +422,7 @@ p {
 
 .world-map-sec {
   margin-top: 140px;
-  background: url(./img/who-world-map.webp);
+  background: url(/img/who-world-map.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
