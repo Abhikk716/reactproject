@@ -12,6 +12,7 @@ export default function Home() {
          once: false,
        })
  }, [])
+ 
   return (
     <>
       <Head>
@@ -21,381 +22,443 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div data-aos="fade-up" className="hero-heading">
-                        <h1>Clean air initiative</h1>
-                        <p>Despite the fact that the recommendations are neither standards.</p>
-                        <a className="page-btn" href="#"><img src="./img/btn-icon.png" alt=""/> Contribute now</a>
+                    <div className="hero-heading">
+                        <h1>Monitor the air you <br /> are breathing</h1>
+                        <p>Own an air quality monitor to now the air quality around you. </p>
+                        <a className="page-btn" href="#"><img src="./img/grow-btn.png" alt="" /> Learn More</a>
                     </div>
                 </div>
                 <div className="col-lg-6"></div>
             </div>
         </div>
     </section>
-    <section className="key-sec-heading">
+    <section className="air-quality-sec">
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div data-aos="fade-up" className="key-heading">
-                        <h2>Key highlights</h2>
-                        <h3>of the initiative</h3>
+                    <div className="air-quality-heading">
+                        <h2> <span> What is </span>
+                            <br /> air quality monitoring?
+                        </h2>
                     </div>
                 </div>
                 <div className="col-lg-6"></div>
             </div>
         </div>
+        <section className="air-quality-bg">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <div className="air-quality-sub-heading">
+                            <h2>Air Quality</h2>
+                            <p>air quality is more worse than outdoor. Keep an eye on your indoor air quality in
+                                real-time. Don't take risk on your health. Understanding the air quality is the first
+                                step to protect yourself from pollution Data comparison of Prana Air’s PM2.5 monitor
+                                with a high-end air quality monitoring device. Our low-cost monitors and sensors are as
+                                accurate as a high-end device. </p>
+                        </div>
+                        <div className="aqi-calculated">
+                            <div className="calcu-btn"><img src="./img/aqi-calcu-btn.png" alt="" /></div>
+                            <ul>
+                                <li>
+                                    <img src="./img/9-real-time-parameters.png" alt="" />
+                                    <span> How AQI is calculated?</span>
+                                </li>
+                                <li>
+                                    <img src="./img/aqi-calculated.png" alt="" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
-    <section className="key-sec-sec">
-        <div className="container">
+    <section className="protect-sec">
+        <div className="container-fluid">
             <div className="row">
-                <div className="col-lg-12">
-                    <div className="key-highlight">
-                        <ul>
-                            <li>
-                                <img src="./img/data-on-your-fingertips.png" alt="" />
-                                <h4>Data on your <br />
-                                    <span>fingertips</span>
-                                </h4>
-                            </li>
-                            <li>
-                                <img src="./img/9-real-time-parameters.png" alt="" />
-                                <h4>9 real-time <br />
-                                    <span>parameters</span>
-                                </h4>
-                            </li>
-                            <li>
-                                <img src="./img/1-min-refresh-rate.png" alt="" />
-                                <h4>1 min <br />
-                                    <span>refresh rate</span>
-                                </h4>
-                            </li>
-                            <li>
-                                <img src="./img/96-signal-accuracy.png" alt="" />
-                                <h4>96% signal <br />
-                                    <span>accuracy</span>
-                                </h4>
-                            </li>
-                        </ul>
+                <div className="col-lg-4">
+                    <div className="tabs">
+                        <div className="tab-btn">
+                            <button className="tab-button active" data-tab="tab1">
+                                <ul>
+                                    <li>
+                                        <h4>Indoor</h4>
+                                        <span>Indoor pollutants</span>
+                                    </li>
+                                    <li><img src="./img/aqi-calcu-btn.png" alt="" /></li>
+                                </ul>
+                            </button>
+                            <button className="tab-button" data-tab="tab2">
+                                <ul>
+                                    <li>
+                                        <h4>Outdoor</h4>
+                                        <span>Outdoor pollutants</span>
+                                    </li>
+                                    <li><img src="./img/aqi-calcu-btn.png" alt="" /></li>
+                                </ul>
+                            </button>
+                        </div>
+                        <div id="content2-tab1" className="tab-content tab-content-para">
+                            <h4>Protect your health from Indoor Pollution</h4>
+                            <p>Indoor air quality is more worse than outdoor. Keep an eye on your indoor air quality in
+                                real-time. Don't take risk on your health. Unstanding the air quality is the first step
+                                to protect yourself from pollution.</p>
+                        </div>
+                        <div id="content2-tab2" className="tab-content tab-content-para hidden">
+                            <h4>Protect your health from Outdoor Pollution</h4>
+                            <p>Indoor air quality is more worse than outdoor. Keep an eye on your indoor air quality in
+                                real-time. Don't take
+                                risk on your health. Unstanding the air quality is the first step to protect yourself
+                                from pollution.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-8">
+                    <div className="img-box">
+                        <div id="content1-tab1" className="tab-content indoor-box">
+                            <ul>
+                                <li><img src="./img/co2.webp" alt="" /></li>
+                                <li><img src="./img/pm2.5.png" alt="" /></li>
+                                <li><img src="./img/pm2.5.png" alt="" /></li>
+                            </ul>
+                        </div>
+                        <div id="content1-tab2" className="tab-content hidden indoor-box outdoor-box">
+                            <ul>
+                                <li><img src="./img/co2.webp" alt="" /></li>
+                                <li><img src="./img/pm2.5.png" alt="" /></li>
+                                <li><img src="./img/no2.webp" alt="" /></li>
+                                <li><img src="./img/co.webp" alt="" /></li>
+                                <li><img src="./img/tvoc.webp" alt="" /></li>
+                                <li><img src="./img/hcho.webp" alt="" /></li>
+                                <li><img src="./img/so2.webp" alt="" /></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section className="contribute-sec">
+    <section className="data-accuracy-sec">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-6">
+                    <div className="data-accuracy-heading">
+                        <h2><span>Data Accuracy Level</span>
+                            Comparison Chart With BAM</h2>
+                    </div>
+                </div>
+                <div className="col-lg-6">
+                    <div className="data-accuracy-para">
+                        <p>Data comparison of Prana Air’s PM2.5 monitor with a high-end air quality monitoring device.
+                            Our low-cost monitors and sensors are as accurate as a high-end device. </p>
+                    </div>
+                </div>
+                <div className="col-lg-12">
+                    <div className="data-accuracy-img">
+                        <img src="./img/data-accuracy-level.webp" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section className="world-map-sec">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="world-map-heading">
+                        <h2>We consume 1 million breaths of air every month without knowing how the air quality affects
+                            our bodies, mind and comfort.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section className="who-box">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div className="according-who">
+                            <h3><strong>92%</strong> of the world population is exposed to harmful levels of air
+                                pollution.
+                            </h3>
+                            <h4>According to <strong>WHO</strong></h4>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="according-who agency">
+                            <h3>The indoors air quality we breathe is <strong>2 to 5 times worse</strong> than outdoors.
+                            </h3>
+                            <h4>According to <strong>Environmental Protection Agency</strong></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section className="major-pollution-sec">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="major-pollution-heading">
+                        <h2><span>Major pollutants in</span>
+                            indoor and outdoor?</h2>
+                    </div>
+                </div>
+                <div className="col-lg-6">
+                    <div className="pocket-pm-box">
+                        <div className="btn-img"><a href="#"><img src="./img/pranaair-btn.webp" alt="" /></a></div>
+                        <div className="pocket-monitor-img"><img src="./img/pocket-pm-monitor.webp" alt="" /></div>
+                        <div className="pockect-txt">
+                            <h3>Pocket PM</h3>
+                            <p>Indoor air quality is more worse than outdoor. Keep an eye on your indoor air quality in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-6">
+                    <div className="pocket-pm-box">
+                        <div className="btn-img"><a href="#"><img src="./img/pranaair-btn.webp" alt="" /></a></div>
+                        <div className="pocket-monitor-img"><img src="./img/indoor-monitor-cair.webp" alt="" /></div>
+                        <div className="pockect-txt">
+                            <h3>CAir+</h3>
+                            <p>Indoor air quality is more worse than outdoor. Keep an eye on your indoor air quality in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-12">
+                    <div className="outdoor-box">
+                        <div className="btn-img"><a href="#"><img src="./img/pranaair-btn.webp" alt="" /></a></div>
+                        <div className="pocket-monitor-img"><img src="./img/outdoor-monitor.webp" alt="" /></div>
+                        <div className="outdoor-txt">
+                            <h3>Outdoor Monitor</h3>
+                            <p>Indoor air quality is more worse than outdoor. Keep an eye on your indoor air quality in
+                                real-time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section className="qoute-sec">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="quote-img">
+                        <img src="./img/quote-icon.png" alt="" />
+                    </div>
+                    <div className="quote-para">
+                        <p>We consume 1 million breaths of air every month without knowing how the air quality affects
+                            our bodies, mind and comfort.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section className="air-quality-product-sec">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-12">
+                    <h2><span>Air quality</span> products</h2>
+                </div>
+            </div>
+            <div className="row dashboard">
+                <div className="aqi-btn"><a href="http://" target="_blank" rel="noopener noreferrer"><img
+                            src="./img/aqi-calcu-btn.png" alt="" /></a></div>
+                <div className="col-lg-4">
+                    <div className="dashboard-box">
+                        <h3>AQI Dashboard</h3>
+                        <h4>Protect your health from </h4>
+                        <p>Indoor air quality is more worse than outdoor. Keep an eye on your indoor </p>
+                        <a className="page-btn" href="#"><img src="./img/grow-btn.png" alt="" /> See More</a>
+                    </div>
+                </div>
+                <div className="col-lg-8">
+                    <div className="dashboard-img">
+                        <img src="./img/aqi-dashboard.webp" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-lg-5">
+                    <div className="aqi-app">
+                        <div className="aqi-btn"><a href="http://" target="_blank" rel="noopener noreferrer"><img
+                                    src="./img/aqi-calcu-btn.png" alt="" /></a></div>
+                        <h3>AQI App </h3>
+                        <h4>Protect your health from </h4>
+                        <p>Indoor air quality is more worse than outdoor. Keep an eye on your indoor</p>
+                        <img src="./img/aqi-mobile-app.webp" alt="" />
+                    </div>
+                </div>
+                <div className="col-lg-7">
+                    <div className="aqi-app aqi-tv-app">
+                        <div className="aqi-btn"><a href="http://" target="_blank" rel="noopener noreferrer"><img
+                                    src="./img/aqi-calcu-btn.png" alt="" /></a></div>
+                        <h3>AQI TV app </h3>
+                        <h4>Protect your health from </h4>
+                        <p>Indoor air quality is more worse than outdoor. Keep an eye on your indoor</p>
+                        <img src="./img/aqi-tv-app.webp" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section className="our-clinet-sec">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-6">
+                    <div className="our-clinet-heading">
+                        <h2><span>Our</span> Clintele</h2>
+                        <h3>Pleasure to work with</h3>
+                    </div>
+                </div>
+                <div className="col-lg-6">
+                    <div className="our-clinet-heading">
+                        <p>We proudly serve businesses and individuals who prioritize clean air solutions to create a
+                            healthier environment for everyone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div className="container-fluid">
             <div className="row">
                 <div className="col-lg-12">
-                    <div data-aos="fade-up" className="contribute-heading">
-                        <h2>Contribute to a <span> world of clean air</span></h2>
-                        <p><strong>Every breath matters.</strong> Join the mission to make air breathable for everyone.
-                        </p>
-                    </div>
-                </div>
-                <div className="col-lg-3">
-                    <div className="contri-box">
-                        <img src="./img/know-and-share.webp" alt="" />
-                        <div className="contri-bx-txt">
-                            <h3>Know and share</h3>
-                            <p>Understand what you are breathing and share it with the world.</p>
+                    <div className="marquee">
+                        <div className="marquee-inner">
+                            <div className="marquee-img-box">
+                                <img src="./img/zeco.webp" alt="" />
+                                <img src="./img/university of chicago.webp" alt="" />
+                                <img src="./img/omaxe.webp" alt="" />
+                                <img src="./img/novotel.webp" alt="" />
+                                <img src="./img/lt.webp" alt="" />
+                                <img src="./img/gmda.webp" alt="" />
+                                <img src="./img/daimler.webp" alt="" />
+                                <img src="./img/emaar.webp" alt="" />
+                                <img src="./img/asianpaints.webp" alt="" />
+                            </div>
+                          
+                            <div className="marquee-img-box">
+                                <img src="./img/zeco.webp" alt="" />
+                                <img src="./img/university of chicago.webp" alt="" />
+                                <img src="./img/omaxe.webp" alt="" />
+                                <img src="./img/novotel.webp" alt="" />
+                                <img src="./img/lt.webp" alt="" />
+                                <img src="./img/gmda.webp" alt="" />
+                                <img src="./img/daimler.webp" alt="" />
+                                <img src="./img/emaar.webp" alt="" />
+                                <img src="./img/asianpaints.webp" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3">
-                    <div className="contri-box">
-                        <img src="./img/create-an-impact.webp" alt="" />
-                        <div className="contri-bx-txt">
-                            <h3>Create an impact</h3>
-                            <p>Help your community prioritise public health and make the air clean for everyone. </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3">
-                    <div className="contri-box">
-                        <img src="./img/fill-the-data-gaps.webp" alt="" />
-                        <div className="contri-bx-txt">
-                            <h3>Fill the data gaps</h3>
-                            <p>Many areas lack air quality monitors, leaving pollution unseen. Be the change by showing
-                                live data to everyone.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3">
-                    <div className="contri-box">
-                        <img src="./img/pollution-hotspots.webp" alt="" />
-                        <div className="contri-bx-txt">
-                            <h3>Easy identifications of pollution hotspots</h3>
-                            <p>Monitors installed in different locations can create hyperlocal air quality monitoring.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section className="why-join-sec">
-        <div className="container">
-            <div className="row">
                 <div className="col-lg-12">
-                    <div data-aos="fade-up" className="why-heading">
-                        <h2><span>Why join the</span> clean air initiative</h2>
-                        <p>Be a part of a global movement for cleaner air and healthier communities.</p>
-                    </div>
-                </div>
-                <div className="col-lg-5">
-                    <div className="why-bg-box">
-                        <h3>Empowering Communities</h3>
-                        <p>We focus on underprivileged areas, helping improve their air quality by checking smoke, odour
-                            and
-                            other levels. </p>
-                    </div>
-                    <div className="why-bg-box light-bg">
-                        <h3>Fight for Justice</h3>
-                        <p>Clean air is a right, not a privilege. Address environmental and climate inequities by
-                            championing the right to clean air for everyone. </p>
-                    </div>
-                </div>
-                <div className="col-lg-7">
-                    <div className="air-quality-monitor-img">
-                        <img src="./img/install-an-air-quality-monitor.webp" alt="" />
-                        <div className="free-txt">
-                            <h4>It’s Free! </h4>
-                            <p>Yes, install an air quality monitor at no cost (shipping charges may apply) and
-                                contribute
-                                effortlessly.</p>
+                    <div className="marquee">
+                        <div className="marquee-inner left-slid">
+                            <div className="marquee-img-box">
+                                <img src="./img/zeco.webp" alt="" />
+                                <img src="./img/university of chicago.webp" alt="" />
+                                <img src="./img/omaxe.webp" alt="" /> 
+                                <img src="./img/novotel.webp" alt="" />
+                                <img src="./img/lt.webp" alt="" />
+                                <img src="./img/gmda.webp" alt="" />
+                                <img src="./img/daimler.webp" alt="" />
+                                <img src="./img/emaar.webp" alt="" />
+                                <img src="./img/asianpaints.webp" alt="" />
+                            </div>
+                            
+                            <div className="marquee-img-box">
+                                <img src="./img/zeco.webp" alt="" />
+                                <img src="./img/university of chicago.webp" alt="" />
+                                <img src="./img/omaxe.webp" alt="" />
+                                <img src="./img/novotel.webp" alt="" />
+                                <img src="./img/lt.webp" alt="" />
+                                <img src="./img/gmda.webp" alt="" />
+                                <img src="./img/daimler.webp" alt="" />
+                                <img src="./img/emaar.webp" alt="" />
+                                <img src="./img/asianpaints.webp" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section className="live-sec">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-8">
-                    <div data-aos="fade-up" className="check-live-heading">
-                        <h2>Check <span>Live</span>
-                            <br />
-                            Air quality conditions in your area
-                        </h2>
-                        <p>AQI maps with governmentally authorised monitors and with Crowd initiative monitors.</p>
-                    </div>
-                </div>
-                <div className="col-lg-4">
-                    <div className="tab-box">
-                        <div className="tab-buttons">
-                            <button className="tab-btn active" data-tab="tab1">Govt. Data</button>
-                            <button className="tab-btn" data-tab="tab2">Cloud</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-12">
-                    <div className="map-area">
-                        <div className="tab-contents">
-                            <div id="tab1" className="tab-content active"><img src="./img/aqi-maps.webp" alt="" /></div>
-                            <div id="tab2" className="tab-content">New Map</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section className="contri-sec">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-12">
-                    <div data-aos="fade-up" className="contri-heading">
-                        <h2>Contribute to a
-                            <span> world of clean air</span>
-                        </h2>
-                    </div>
-                </div>
-                <div className="col-lg-6">
-                    <div className="its-free-heaidng">
-                        <h3>It’s Free!</h3>
-                        <p>Yes, install an air quality monitor at no cost
-                            <strong>(shipping charges may apply)</strong> and contribute effortlessly.
-                        </p>
-                        <a className="page-btn" href="#"><img src="./img/btn-icon.png" alt="" /> Contribute now</a>
-                    </div>
-                </div>
-                <div className="col-lg-6">
-                    <div className="its-free-img">
-                        <img src="./img/air-quality-monitor-install-free.webp" alt="" />
-                    </div>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-lg-12">
-                    <div data-aos="fade-up" className="feature-heading">
-                        <h3>Monitor Features</h3>
-                    </div>
-                </div>
-                <div className="col-lg-7">
-                    <div className="track-key">
-                        <h4>Tracks Key Pollutants</h4>
-                        <ul>
-                            <li><img src="./img/tvoc-icon.png" alt="" />Total Volatile
-                                Compounds (TVOC)</li>
-                            <li><img src="./img/tvoc-icon.png" alt="" />Air Quality Index
-                                (AQI)</li>
-                            <li><img src="./img/tvoc-icon.png" alt="" />Particulate Matter
-                                (PM1)</li>
-                            <li><img src="./img/tvoc-icon.png" alt="" />Particulate Matter
-                                (PM2.5)</li>
-                            <li><img src="./img/tvoc-icon.png" alt="" />Particulate Matter
-                                (PM10)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="col-lg-5">
-                    <div className="built-outdoor">
-                        <h4>Built for the Outdoors</h4>
-                        <p>We focus on underprivileged areas, helping improve their air quality by checking smoke, odour
-                            and other levels. </p>
-                        <ul>
-                            <li><img src="./img/mark-iocn.png" alt="" />Weatherproof housing</li>
-                            <li><img src="./img/mark-iocn.png" alt="" />Compact</li>
-                            <li><img src="./img/mark-iocn.png" alt="" />Wall-mountable</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-lg-12">
-                    <div data-aos="fade-up" className="connect-heading">
-                        <h2>Connectivity</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section className="connect-sec">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-6">
-                    <div className="wifi-img">
-                        <ul>
-                            <li><img data-aos="fade-up" src="./img/wifi-2-4-ghz.webp" alt="" /></li>
-                            <li>
-                                <h3>WiFi 2.4GHz</h3>
-                                <p>Yes, install an air quality monitor at no cost <strong>(shipping charges may
-                                        apply)</strong> and contribute effortlessly.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="col-lg-6">
-                    <div className="wifi-img mob-img">
-                        <ul>
-                            <li><img data-aos="fade-up" src="./img/mobile-app-access.webp" alt="" /></li>
-                            <li>
-                                <h3>Mobile app access</h3>
-                                <p>Yes, install an air quality monitor at no cost <strong>(shipping charges may
-                                        apply)</strong> and contribute effortlessly.</p>
-                                <a href="#">Learn more <img src="./img/btn-icon.png" alt="" /></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section className="better-data-sec">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-12">
-                    <div data-aos="fade-up" className="better-data-heading">
-                        <h2>Better data access</h2>
-                        <p>We focus on underprivileged areas, helping improve their air quality by checking smoke, odour
-                            and other levels. </p>
-                    </div>
-                    <div className="bd-img">
-                        <img data-aos="fade-up" src="./img/better-data-access.webp" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section className="join-sec">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-6">
-                    <div data-aos="fade-up" className="join-heading">
-                        <h2>How to Join the Initiative?</h2>
-                        <p>Join the innovation now to</p>
-                    </div>
-                </div>
-                <div className="col-lg-6">
-                    <div className="join-btn">
-                        <a className="page-btn" href="#"><img src="./img/btn-icon.png" alt="" /> Contribute now</a>
-                    </div>
-                </div>
-                <div className="col-lg-12">
-                    <div className="how-join-box">
-                        <ul>
-                            <li>
-                                <h3>01</h3>
-                                <div className="join-txt">
-                                    <div className="join-img">
-                                        <img src="./img/get-the-monitor.webp" alt="" />
-                                    </div>
-                                    <h4>Get the monitor</h4>
-                                    <p>Enroll yourself and order your air quality monitor to join the initiative. </p>
-                                </div>
-                            </li>
-                            <li>
-                                <h3>02</h3>
-                                <div className="join-txt">
-                                    <div className="join-img">
-                                        <img src="./img/plug-and-play.webp" alt="" />
-                                    </div>
-                                    <h4>Plug and Play</h4>
-                                    <p>Set up your monitor effortlessly just plug and play the device. </p>
-                                </div>
-                            </li>
-                            <li>
-                                <h3>03</h3>
-                                <div className="join-txt">
-                                    <div className="join-img">
-                                        <img src="./img/access-data.webp" alt="" />
-                                    </div>
-                                    <h4>Access Data</h4>
-                                    <p>View real-time data on your phone or other devices with WiFi connectivity. </p>
-                                </div>
-                            </li>
-                            <li>
-                                <h3>04</h3>
-                                <div className="join-txt">
-                                    <div className="join-img">
-                                        <img src="./img/join-the-community.webp" alt="" />
-                                    </div>
-                                    <h4>Join the Community</h4>
-                                    <p>Collaborate with others to make a tangible
-                                        <br />
-                                        difference.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section className="become-sec">
+    <section className="app-sec">
         <div className="container">
             <div className="row">
                 <div className="col-lg-4">
-                    <div className="become-heading">
-                        <h2>Become a Contributor</h2>
-                        <p>Understand what you are breathing and share it with the world.</p>
-                        <a className="page-btn" href="#"><img src="./img/become-btn.png" alt="" /> Contribute now</a>
+                    <div className="app-heading">
+                        <h2><span>Air quality monitor</span> applications</h2>
                     </div>
                 </div>
                 <div className="col-lg-8">
-                    <div className="become-img">
-                        <img src="./img/become-contributor.webp" alt="" />
+                    <div className="construct-img">
+                        <img src="./img/construction-site.webp" alt="" />
+                        <div className="app-title">
+                            <h3>Constructions Sites</h3>
+                        </div>
                     </div>
+                </div>
+                <div className="col-lg-6">
+                    <div className="app-box construct-img">
+                        <img src="./img/school.webp" alt="" />
+                        <div className="app-title">
+                            <h3>Schools</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-6">
+                    <div className="app-box construct-img">
+                        <img src="./img/real-estate.webp" alt="" />
+                        <div className="app-title">
+                            <h3>Real-estate</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-6">
+                    <div className="app-box construct-img">
+                        <img src="./img/smart-homes.webp" alt="" />
+                        <div className="app-title">
+                            <h3>Smart Homes</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-6">
+                    <div className="app-box construct-img">
+                        <img src="./img/hospital-health-care.webp" alt="" />
+                        <div className="app-title">
+                            <h3>Hospital and health care</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section className="contact-sec">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-6">
+                    <div className="lets-talk">
+                        <h2>Let’s Talk</h2>
+                        <p>Have some big idea or brand to develop and need help? Then reach out we'd love to hear about
+                            your project and provide help</p>
+                        <ul>
+                            <li>
+                                <span>Mail Us</span>
+                                <a href="#">Info@purelogic.in</a>
+                            </li>
+                            <li>
+                                <span>Call Us</span>
+                                <a href="#">+91 73918 73918</a>
+                            </li>
+                            <li>
+                                <span>Address</span>
+                                <a href="#">Crown Heights, 7th Floor, 706, Rohini Sector - 10, New Delhi - 110085,
+                                    India</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="col-lg-6">
+                    
                 </div>
             </div>
         </div>
@@ -404,7 +467,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <div data-aos="fade-up" className="faq-heading">
+                    <div className="faq-heading">
                         <h2>Frequently asked questions</h2>
                     </div>
                     <div className="accordion" id="accordionExample">

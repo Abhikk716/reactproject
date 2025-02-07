@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <script
+      <script
           dangerouslySetInnerHTML={{
             __html: `
               document.addEventListener("DOMContentLoaded", () => {
@@ -24,7 +24,7 @@ export default function Document() {
               });
             `,
           }}
-        ></script>
+        ></script>     
          <link
           href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
           rel="stylesheet"
