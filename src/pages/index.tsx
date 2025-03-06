@@ -559,8 +559,8 @@ interface BlogPost {
                 
                 {/* Author and Publish Date */}
                 <p>
-                  <strong>Author:</strong> {post._embedded?.author?.[0]?.name || "Unknown"} |  
-                  <strong> Date:</strong> {new Date(post.date).toLocaleDateString()}
+                  <strong>Author:</strong> {post._embedded?.author?.[0]?.name || "Admin"} |  
+                  <strong> Date:</strong> {new Date(post.date).toLocaleDateString("en-GB")}
                 </p>
 
                 <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
