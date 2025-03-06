@@ -1,17 +1,29 @@
 import Aos from 'aos';
 import Head from 'next/head';
 import { useEffect } from 'react';
-export default function Home() {
-     useEffect(() => {
-    // Load Bootstrap's JS on the client side
-    import('bootstrap/dist/js/bootstrap.bundle.min.js');
-  }, []);
-  useEffect(() => {
-    Aos.init({
-         duration: 800,
-         once: false,
-       })
- }, [])
+import { GetStaticProps } from "next";
+interface BlogPost {
+    id: number;
+    title: { rendered: string };
+    excerpt: { rendered: string };
+    link: string;
+  }
+  
+  interface HomeProps {
+    posts: BlogPost[];
+  }
+  export default function Home({ posts }: HomeProps) {
+    useEffect(() => {
+      // Load Bootstrap's JS on the client side
+      import('bootstrap/dist/js/bootstrap.bundle.min.js');
+    }, []);
+  
+    useEffect(() => {
+      Aos.init({
+        duration: 800,
+        once: false,
+      });
+    }, []);
  
   return (
     <>
@@ -524,7 +536,30 @@ export default function Home() {
             </div>
         </div>
     </section>
+    <section className="blog-sec">
+        <div className="container">
+          <h2>Latest Blog Posts</h2>
+          <ul>
+            {posts.map((post) => (
+              <li key={post.id}>
+                <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
+                <a href={post.link} target="_blank" rel="noopener noreferrer">Read More</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     
     </>
   );
 }
+export const getStaticProps: GetStaticProps = async () => {
+    const res = await fetch("https://pranaair.com/wp-json/wp/v2/posts");
+    const posts: BlogPost[] = await res.json();
+  
+    return {
+      props: { posts },
+      revalidate: 10,
+    };
+  };
