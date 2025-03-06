@@ -2,11 +2,17 @@ import Aos from 'aos';
 import Head from 'next/head';
 import { useEffect } from 'react';
 import { GetStaticProps } from "next";
+
 interface BlogPost {
     id: number;
     title: { rendered: string };
     excerpt: { rendered: string };
     link: string;
+    date: string;
+    _embedded?: { 
+      "wp:featuredmedia"?: [{ source_url: string }];
+      author?: [{ name: string }];
+    };
   }
   
   interface HomeProps {
@@ -559,7 +565,7 @@ export const getStaticProps: GetStaticProps = async () => {
     const posts: BlogPost[] = await res.json();
   
     return {
-      props: { posts },
-      revalidate: 10,
+        props: { posts },
+        revalidate: 10,
     };
   };
