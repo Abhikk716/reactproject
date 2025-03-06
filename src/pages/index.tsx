@@ -543,33 +543,33 @@ interface BlogPost {
         </div>
     </section>
     <section className="blog-sec">
-        <div className="container">
-          <h2>Latest Blog Posts</h2>
-          <ul>
-            {posts.map((post) => (
-              <li key={post.id}>
-                {post._embedded?.["wp:featuredmedia"]?.[0]?.source_url && (
-                  <img 
-                    src={post._embedded["wp:featuredmedia"][0].source_url} 
-                    alt="Blog Thumbnail" 
-                    style={{ width: "100%", maxWidth: "300px", borderRadius: "10px" }} 
-                  />
-                )}
-                <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-                
-                {/* Author and Publish Date */}
-                <p>
-                <strong>Author:</strong> {post._embedded?.author?.[0]?.name || "author"} |  
-                  <strong> Date:</strong> {new Date(post.date).toLocaleDateString("en-GB")}
-                </p>
+  <div className="container">
+    <h2>Latest Blog Posts</h2>
+    <ul>
+      {posts.map((post) => (
+        <li key={post.id}>
+          {post._embedded?.["wp:featuredmedia"]?.[0]?.source_url && (
+            <img 
+              src={post._embedded["wp:featuredmedia"][0].source_url} 
+              alt="Blog Thumbnail" 
+              style={{ width: "100%", maxWidth: "300px", borderRadius: "10px" }} 
+            />
+          )}
+          <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
 
-                <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
-                <a href={post.link} target="_blank" rel="noopener noreferrer">Read More</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+          {/* Author and Publish Date */}
+          <p>
+            <strong>Author:</strong> {post._embedded?.author?.[0]?.name || post.author_name || "Unknown"} |  
+            <strong> Date:</strong> {new Date(post.date).toLocaleDateString("en-GB")}
+          </p>
+
+          <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
+          <a href={post.link} target="_blank" rel="noopener noreferrer">Read More</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
     
     </>
   );
