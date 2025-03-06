@@ -579,7 +579,7 @@ interface BlogPost {
   );
 }
 export const getStaticProps: GetStaticProps = async () => {
-    const res = await fetch("https://pranaair.com/wp-json/wp/v2/posts?_embed");
+    const res = await fetch(`https:pranaair.com/wp-json/wp/v2/posts?_embed&t=${Date.now()}`);
     const posts: BlogPost[] = await res.json();
   
     return {
