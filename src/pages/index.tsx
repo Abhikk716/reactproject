@@ -559,7 +559,7 @@ interface BlogPost {
                 
                 {/* Author and Publish Date */}
                 <p>
-                <strong>Author:</strong> {post._embedded?.author?.[0]?.name || "Unknown"} |  
+                <strong>Author:</strong> {post._embedded?.author?.[0]?.name || "author"} |  
                   <strong> Date:</strong> {new Date(post.date).toLocaleDateString("en-GB")}
                 </p>
 
