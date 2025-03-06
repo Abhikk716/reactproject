@@ -559,7 +559,7 @@ interface BlogPost {
             <div className="card-body">
               <h5 className="card-title" dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
               <p className="text-muted small">
-                <strong>Author:</strong> {post._embedded?.author?.[0]?.name || "Unknown"} |  
+                <strong>Author:</strong> {post._embedded?.author?.[0]?.name || "authore"} |  
                 <strong> Date:</strong> {new Date(post.date).toLocaleDateString("en-GB")}
               </p>
               <p className="card-text" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
