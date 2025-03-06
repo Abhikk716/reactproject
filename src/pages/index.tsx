@@ -1,6 +1,6 @@
 import Aos from 'aos';
 import Head from 'next/head';
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { GetStaticProps } from "next";
 
 interface BlogPost {
@@ -19,6 +19,13 @@ interface BlogPost {
     posts: BlogPost[];
   }
   export default function Home({ posts }: HomeProps) {
+  
+    useEffect(() => {
+        fetch("https://pranaair.com/wp-json/wp/v2/posts?_embed=author")
+            .then(res => res.json())
+            .then(data => console.log(data)); // ✅ Console me response check karein
+    }, []);
+
     useEffect(() => {
       // Load Bootstrap's JS on the client side
       import('bootstrap/dist/js/bootstrap.bundle.min.js');
