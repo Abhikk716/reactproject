@@ -584,3 +584,13 @@ export const getStaticProps: GetStaticProps = async () => {
     };
   };
   
+  {posts.map((post) => {
+    console.log("Post Data:", post); // Yeh pura post object console me dikhayega
+    console.log("Embedded Data:", post._embedded); // Yeh sirf _embedded ka data dikhayega
+    
+    return (
+        <li key={post.id}>
+            <strong>Author:</strong> {post._embedded?.author?.[0]?.name || "No Author"}
+        </li>
+    );
+})}
