@@ -583,8 +583,4 @@ export const getStaticProps: GetStaticProps = async () => {
         revalidate: 10,
     };
   };
-  useEffect(() => {
-    fetch("https://pranaair.com/wp-json/wp/v2/posts?_embed")
-      .then((res) => res.json())
-      .then((data) => console.log(data)); // ✅ Console me check karein
-  }, []);
+  
