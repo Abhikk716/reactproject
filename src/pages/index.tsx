@@ -9,6 +9,7 @@ interface BlogPost {
     excerpt: { rendered: string };
     link: string;
     date: string;
+    author_name?: string; // Yeh line add karein
     _embedded?: { 
       "wp:featuredmedia"?: [{ source_url: string }];
       author?: [{ name: string }];
