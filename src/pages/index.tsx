@@ -542,34 +542,38 @@ interface BlogPost {
             </div>
         </div>
     </section>
-    <section className="blog-sec">
-        <div className="container">
-          <h2>Latest Blog Posts</h2>
-          <ul>
-            {posts.map((post) => (
-              <li key={post.id}>
-                {post._embedded?.["wp:featuredmedia"]?.[0]?.source_url && (
-                  <img 
-                    src={post._embedded["wp:featuredmedia"][0].source_url} 
-                    alt="Blog Thumbnail" 
-                    style={{ width: "100%", maxWidth: "300px", borderRadius: "10px" }} 
-                  />
-                )}
-                <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-                
-                {/* Author and Publish Date */}
-                <p>
-                <strong>Author:</strong> {post._embedded?.author?.[0]?.name || "author"} |  
-                  <strong> Date:</strong> {new Date(post.date).toLocaleDateString("en-GB")}
-                </p>
-
-                <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
-                <a href={post.link} target="_blank" rel="noopener noreferrer">Read More</a>
-              </li>
-            ))}
-          </ul>
+    <section className="blog-sec py-5 bg-light">
+  <div className="container">
+    <h2 className="text-center mb-4">Latest Blog Posts</h2>
+    <div className="row">
+      {posts.map((post) => (
+        <div key={post.id} className="col-md-4">
+          <div className="card shadow-sm">
+            {post._embedded?.["wp:featuredmedia"]?.[0]?.source_url && (
+              <img
+                src={post._embedded["wp:featuredmedia"][0].source_url}
+                className="card-img-top"
+                alt="Blog Thumbnail"
+              />
+            )}
+            <div className="card-body">
+              <h5 className="card-title" dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+              <p className="text-muted small">
+                <strong>Author:</strong> {post._embedded?.author?.[0]?.name || "Unknown"} |  
+                <strong> Date:</strong> {new Date(post.date).toLocaleDateString("en-GB")}
+              </p>
+              <p className="card-text" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
+              <a href={post.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                Read More
+              </a>
+            </div>
+          </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
     
     </>
   );
