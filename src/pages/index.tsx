@@ -574,46 +574,6 @@ interface BlogPost {
     </div>
   </div>
 </section>
-    {/* Products Section */}
-      <section className="product-sec py-5">
-        <div className="container">
-          <h2 className="text-center mb-4">Latest Products</h2>
-          <div className="row">
-            {products.map((product) => (
-              <div className="col-lg-4 col-md-6 mb-4" key={product.id}>
-                <div className="card shadow-sm h-100" data-aos="fade-up">
-                  {/* Product Image */}
-                  {product.images[0]?.src && (
-                    <Image
-                      src={product.images[0].src}
-                      alt={product.name}
-                      width={350}
-                      height={200}
-                      className="card-img-top"
-                      style={{ objectFit: "cover", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}
-                    />
-                  )}
-
-                  <div className="card-body">
-                    {/* Product Name */}
-                    <h5 className="card-title">{product.name}</h5>
-
-                    {/* Product Price */}
-                    <p className="text-muted">
-                      <strong>Price:</strong> ${product.price}
-                    </p>
-
-                    {/* Buy Now Button */}
-                    <a href={product.permalink} target="_blank" rel="noopener noreferrer" className="btn btn-success">
-                      Buy Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     
     </>
   );
@@ -627,14 +587,5 @@ export const getStaticProps: GetStaticProps = async () => {
         revalidate: 10,
     };
   };
-  
-  export const getStaticProps = async () => {
-    const res = await fetch("https:pranaair.com/wp-json/wc/v3/products?consumer_key=ck_4eb00f1192412d5527c7a163a8f43532fa910f86&consumer_secret=cs_830a194895285cba303ba002d4b889b7e6e64c15");
-    const products = await res.json();
-  
-    return {
-      props: { products },
-      revalidate: 10, // Auto-refresh karega har 10 sec me
-    };
-  };
+
   
