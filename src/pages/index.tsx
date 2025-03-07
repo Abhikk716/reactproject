@@ -2,6 +2,7 @@ import Aos from "aos";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { GetStaticProps } from "next";
 
 // BlogPost Interface
 interface BlogPost {
